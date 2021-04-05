@@ -1,6 +1,7 @@
 ## 0.4 2021-04-05
 
-- Modify: clean matrix grid
+- Change: clean matrix grid
+- Change: Common Anode RGB LED。符合我目前手上有的料件。
 
 ## 0.3
 
