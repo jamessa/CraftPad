@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CraftPad"
-Date "2021-04-04"
-Rev "V0.3 RGB LED"
+Date "2021-04-05"
+Rev "V0.4 Clean Matrix"
 Comp "James Sa"
 Comment1 ""
 Comment2 ""
@@ -600,22 +600,20 @@ Wire Wire Line
 Wire Wire Line
 	2350 2050 1400 2050
 Connection ~ 1400 2050
-Text GLabel 2350 2650 0    50   Input ~ 0
-Col1
 Text GLabel 3250 2350 2    50   Input ~ 0
+Col1
+Text GLabel 2350 2150 0    50   Input ~ 0
 Row1
-Text GLabel 3250 2450 2    50   Input ~ 0
+Text GLabel 2350 2350 0    50   Input ~ 0
 Row2
-Text GLabel 3250 2550 2    50   Input ~ 0
+Text GLabel 2350 2650 0    50   Input ~ 0
 Row3
-Text GLabel 2350 2750 0    50   Input ~ 0
-Row4
 NoConn ~ 2350 1750
 NoConn ~ 2350 1850
-NoConn ~ 2350 2150
+NoConn ~ 3250 2250
 NoConn ~ 2350 2250
-NoConn ~ 2350 2350
 NoConn ~ 3250 2850
+NoConn ~ 3250 2150
 NoConn ~ 3250 1750
 $Comp
 L power:GND #PWR03
@@ -654,15 +652,15 @@ F 3 "~" H 8000 4500 50  0001 C CNN
 	1    8000 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3250 2650 2    50   Input ~ 0
+Text GLabel 3250 2550 2    50   Input ~ 0
 Col3
-Text GLabel 3250 2750 2    50   Input ~ 0
+Text GLabel 3250 2450 2    50   Input ~ 0
 Col2
-Text GLabel 3250 2250 2    50   Input ~ 0
+Text GLabel 3250 2750 2    50   Input ~ 0
 Col5
 Wire Wire Line
 	3750 2050 3250 2050
-Text GLabel 3250 2150 2    50   Input ~ 0
+Text GLabel 3250 2650 2    50   Input ~ 0
 Col4
 $Comp
 L SparkFun-Boards:SPARKFUN_PRO_MICRO B1
@@ -860,4 +858,6 @@ Wire Wire Line
 	6050 1950 6250 1950
 Wire Wire Line
 	6800 1950 6550 1950
+Text GLabel 2350 2750 0    50   Input ~ 0
+Row4
 $EndSCHEMATC
