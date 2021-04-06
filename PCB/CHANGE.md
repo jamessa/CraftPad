@@ -1,3 +1,7 @@
+## 0.5 2021-04-06
+
+- Fix LED pinout.
+
 ## 0.4 2021-04-05
 
 - Change: clean matrix grid

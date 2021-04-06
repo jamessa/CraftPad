@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CraftPad"
-Date "2021-04-05"
-Rev "V0.4 Clean Matrix"
+Date "2021-04-06"
+Rev "V0.5 RCGB"
 Comp "James Sa"
 Comment1 ""
 Comment2 ""
@@ -641,17 +641,6 @@ Wire Wire Line
 	4850 1850 4850 1950
 Wire Wire Line
 	3750 1650 3750 2050
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 607BB18A
-P 8000 4500
-F 0 "H1" H 8100 4546 50  0000 L CNN
-F 1 "MountingHole" H 8100 4455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8000 4500 50  0001 C CNN
-F 3 "~" H 8000 4500 50  0001 C CNN
-	1    8000 4500
-	1    0    0    -1  
-$EndComp
 Text GLabel 3250 2550 2    50   Input ~ 0
 Col3
 Text GLabel 3250 2450 2    50   Input ~ 0
@@ -788,7 +777,7 @@ Wire Wire Line
 	3900 7500 4900 7500
 Text GLabel 2350 2450 0    50   Input ~ 0
 Blue
-Text GLabel 5950 2050 0    50   Input ~ 0
+Text GLabel 5950 1650 0    50   Input ~ 0
 Blue
 Text GLabel 2350 2550 0    50   Input ~ 0
 Green
@@ -796,7 +785,7 @@ Text GLabel 5950 1850 0    50   Input ~ 0
 Green
 Text GLabel 2350 2850 0    50   Input ~ 0
 Red
-Text GLabel 5950 1650 0    50   Input ~ 0
+Text GLabel 5950 2050 0    50   Input ~ 0
 Red
 Wire Wire Line
 	1400 2050 1400 3000
@@ -848,29 +837,29 @@ Wire Wire Line
 Text GLabel 2350 2750 0    50   Input ~ 0
 Row4
 $Comp
-L Device:LED_RGBA D21
-U 1 1 606B6703
+L Device:LED_RCGB D21
+U 1 1 606C056A
 P 6900 1850
-F 0 "D21" H 6900 2347 50  0000 C CNN
-F 1 "LED_RGBA" H 6900 2256 50  0000 C CNN
+F 0 "D21" H 6900 1383 50  0000 C CNN
+F 1 "LED_RCGB" H 6900 1474 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6900 1800 50  0001 C CNN
 F 3 "~" H 6900 1800 50  0001 C CNN
 	1    6900 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 606CC65B
+P 7350 2300
+F 0 "#PWR06" H 7350 2050 50  0001 C CNN
+F 1 "GND" H 7355 2127 50  0000 C CNN
+F 2 "" H 7350 2300 50  0001 C CNN
+F 3 "" H 7350 2300 50  0001 C CNN
+	1    7350 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7100 1850 7350 1850
 Wire Wire Line
-	7350 1850 7350 1450
-$Comp
-L power:VCC #PWR0101
-U 1 1 606D791F
-P 7350 1450
-F 0 "#PWR0101" H 7350 1300 50  0001 C CNN
-F 1 "VCC" H 7365 1623 50  0000 C CNN
-F 2 "" H 7350 1450 50  0001 C CNN
-F 3 "" H 7350 1450 50  0001 C CNN
-	1    7350 1450
-	1    0    0    -1  
-$EndComp
+	7350 1850 7350 2300
 $EndSCHEMATC
