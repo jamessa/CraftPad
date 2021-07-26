@@ -1,3 +1,5 @@
+Todo SMD reset button, SMD LED, Resistor
+
 ## 0.5 2021-04-06
 
 - Fix LED pinout.
